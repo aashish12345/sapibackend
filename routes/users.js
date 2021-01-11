@@ -25,7 +25,7 @@ const userRoutes = (app, fs) => {
     };
 
     // READ
-    app.get('/getSpacesData', (req, res) => {
+    app.get('/launches', (req, res) => {
         fs.readFile(dataPath, 'utf8', (err, data) => {
             if (err) {
                 throw err;
